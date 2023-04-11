@@ -1,9 +1,9 @@
 {
   "name": "header",
   "version": "0.0.0",
-  "main": "dist/index.js",
+  "main": "xxx/index.js",
   "scripts": {
-    "build": "rimraf dist && rollup --config",
+    "build": "rimraf xxx && rollup --config",
     "test": "jest"
   },
   "dependencies": {
@@ -21,5 +21,15 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "outputs": [
+          "{projectRoot}/xxx",
+          "{projectRoot}/public/xxx"
+        ]
+      }
+    }
   }
 }
